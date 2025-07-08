@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'threats',
 ]
 
 MIDDLEWARE = [
@@ -78,13 +80,15 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME'  : 'Threat_dbs',
-        'USER'  : 'root',
-        'PASSWORD':'kotresh893',
-        'HOST':'localhost',
+        'NAME'  : 'threat_dbs',
+        'USER'  : 'threat_dbs_user',
+        'PASSWORD':'FLs0vUQkm3Y2BkFF2Vg1zgJ3WDYhVQSt',
+        'HOST':'dpg-d1mmf26r433s73be49sg-a',
         'PORT':'5432',
     }
 }
+
+DATABASES['default']=dj_database_url.parse("postgresql://threat_dbs_user:FLs0vUQkm3Y2BkFF2Vg1zgJ3WDYhVQSt@dpg-d1mmf26r433s73be49sg-a.oregon-postgres.render.com/threat_dbs")
 
 
 # Password validation
