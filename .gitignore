@@ -1,0 +1,29 @@
+    # Virtual environment
+    venv/
+    .venv/
+
+    # Python bytecode
+    __pycache__/
+    *.py[cod]
+    *.egg-info/
+
+    # Build artifacts
+    build/
+    dist/
+
+    # IDE-specific files
+    .idea/
+    .vscode/
+    *.sublime-project
+    *.sublime-workspace
+
+    # Environment variables/secrets
+    .env
+    config.py
+
+    # Test-related files
+    coverage.xml
+    .pytest_cache/
+
+    # Logs
+    *.log
