@@ -78,7 +78,7 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME'  : 'Threat_db',
+        'NAME'  : 'Threat_dbs',
         'USER'  : 'root',
         'PASSWORD':'kotresh893',
         'HOST':'localhost',
